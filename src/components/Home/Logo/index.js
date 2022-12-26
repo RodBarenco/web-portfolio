@@ -1,8 +1,7 @@
 import './index.scss'
 import LogoB from '../../../assets/images/B.png'
-import { useEffect, useRef } from 'react'
-import gsap from 'gsap-trial'
-import { DrawSVGPlugin } from 'gsap-trial/all'
+import { useRef } from 'react'
+
 
 
 
@@ -12,40 +11,6 @@ const Logo = () => {
     const outlineLogoRef = useRef();
     const solidLogoRef = useRef(); 
 
-    useEffect(() => {
-        gsap.registerPlugin(DrawSVGPlugin)
-    
-        gsap
-          .timeline()
-          .to(bgRef.current, {
-            duration: 1,
-            opacity: 1,
-          })
-          .fromTo(outlineLogoRef.current, {
-            drawSVG: 0,
-          },
-          {
-            drawSVG: 1000,
-            delay: 1,
-            duration: 5,
-          }
-          )
-        gsap.fromTo(
-          solidLogoRef.current,
-          {
-            opacity: 0,
-          },
-          {
-            opacity: 1,
-            delay: 4,
-            duration: 4,
-          }
-        )
-      }, [])
-
-
-
-    
     return (
         <div className='logo-container' ref={bgRef}>
             <img ref={solidLogoRef} className='solid-logo' src={LogoB} alt="B"/>
