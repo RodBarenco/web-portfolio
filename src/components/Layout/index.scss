@@ -43,7 +43,7 @@
   .contact-page {
     .text-zone {
       position: absolute;
-      left: 22%;
+      left: 16%;
       top: 50%;
       transform: translateY(-50%);
       width: 35%;
@@ -51,7 +51,7 @@
       display: table-cell;
 
       h1 {
-        font-size: 53px;
+        font-size: 68px;
         font-family: Coolvetica;
         color:#e16d23;
         font-weight: 400;
@@ -85,7 +85,7 @@
       }
 
         p {
-          font-style: 13px;
+          font-size: 14px;
           color: #fff;
           font-family: sans-serif;
           font-weight: 300;
@@ -108,5 +108,30 @@
           color: #fff;
           }
         }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .page {
+      position: initial;
+    }
+
+    .container {
+      position: initial;
+      height: auto;
+      min-height: auto;
+
+      &.about-page,
+      &.contact-page{
+
+        .text-zone {
+          position: initial;
+          transform: none;
+          width: 100%;
+          display: block;
+          padding: 20px;
+          box-sizing: border-box;
+        }
+      }
     }
   }

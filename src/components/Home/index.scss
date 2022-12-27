@@ -83,3 +83,33 @@
     }
 
 }
+
+@media screen and (max-width: 1200px) {
+    .tags,
+    .home-page h1::before,
+    .home-page h1::after {
+    display: none;
+    }
+    .home-page {       
+        
+        .text-zone {
+            position: initial;
+            width: 100%;
+            transform: none;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+        .flat-button{
+            margin-top: 45px;
+            margin-left: 70%;
+        }
+
+        .logo-container{
+            position: absolute;
+            width: 250px;
+            height: auto;
+            opacity: 0.5;
+        }
+    }
+    
+}

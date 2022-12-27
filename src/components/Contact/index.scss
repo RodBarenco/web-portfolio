@@ -1,11 +1,11 @@
+
 .contact-form {
     width: 100%;
-    margin-top: 20px;
-  
+        
     ul {
       padding: 0;
-      margin: 0;
-  
+      margin-top: 20px;
+      
       li {
         padding: 0;
         margin: 0;
@@ -115,7 +115,7 @@
     background: rgb(25, 24, 32, 0.1);
     float: right;
     margin: 0;
-    margin-right: 10px;
+    margin-right: 20px;
     width: 40%;
     height: 100%;
     border-radius: 4px;
@@ -135,9 +135,9 @@
 @media screen and (max-width: 1200px) {
   .map-wrap {
     float: none;
-    margin: 0;
-    width: 100%;
+    width: 90%;
     height: 400px;
+    margin: auto;
   }
   
   .info-map {
