@@ -114,12 +114,14 @@
   @media screen and (max-width: 1200px) {
     .page {
       position: initial;
+      
     }
-
-    .container {
+   
+    .about-page,
+    .contact-page{
+      
       position: initial;
       height: auto;
-      min-height: auto;
 
       &.about-page,
       &.contact-page{
@@ -129,9 +131,25 @@
           transform: none;
           width: 100%;
           display: block;
-          padding: 20px;
+          padding: 10px;
           box-sizing: border-box;
+          h1 {
+            font-size: 35px;
+            margin-top: -78px;
+            margin-left: 78px;
+          
+            &::before,
+            &::after {
+            display: none;
+            }
+          }
+          p {
+            font-size: 10px;
+            font-weight: 400;
+            margin-top: -8px;
+          }
         }
       }
     }
   }
+  
