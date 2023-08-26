@@ -31,7 +31,7 @@ const About = () => {
              </h1>
              <p>
                    I'm looking for opportunities as a beginner in the IT field,
-                   that is putting all own energy and dedication into learning through pratice as well 
+                   by putting all my energy and dedication into learning through pratice as well 
                    as from academic material.
              </p>
              <p> 
